@@ -1,7 +1,9 @@
 body {
   background-color: #000;
+  color: lime;
   background-image: url(../images/galaxyv4.png);
   font-family: 'press_start_2pregular',sans-serif;
+  text-transform: uppercase;
 
 }
 
@@ -20,15 +22,27 @@ body {
 }
 
 .header{
-  color: lime;
-  text-transform: uppercase;
+
+}
+.intro {
+  position: relative;
 }
 
+.intro h1 {
+  width: 100%;
+  font-size:8vmin;
+  z-index: 1;
+  position: absolute;
+  left: 10%;
+  top: 50%;
+
+}
 .intro img {
-  width: 50%;
+  width: 90%;
   margin: 0 auto;
   display: block;
 }
+
 
 div#board {
   position: relative;
@@ -101,6 +115,10 @@ div#score-area {
   background-size: 65%;
 }
 
+.hide{
+  visibility: hidden;
+}
+
 @-webkit-keyframes largeText {
     0%, 100% {
         visibility: hidden;
@@ -151,5 +169,14 @@ div#score-area {
   div#message-area {
     top: 2%;
     left: 36%;
+  }
+
+  .intro h1 {
+    font-size: 13vmin;
+    top: 20%;
+  }
+
+  .intro img {
+    width: 50%;
   }
 }

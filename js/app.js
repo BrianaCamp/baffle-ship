@@ -150,7 +150,12 @@ function parseGuess(guess){
   return null;
 
 }
-function init() {
+$(document).ready(function() {
+  $(".letter").each(function() {
+    $(this).hide().fadeIn(5000).delay(4000);
+    console.log("test letter");
+  });
+
   model.generateShipsLocations();
 
   function generateScore1(){
@@ -198,6 +203,10 @@ function init() {
 
 
 
+
+
+
+
     $(".number").on('click', function(eventObj){
         eventObj.preventDefault();
         model.fire(eventObj.target.id);
@@ -211,6 +220,4 @@ function init() {
       }
 
 );
-}
-
-window.onload = init;
+});
