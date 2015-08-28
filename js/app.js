@@ -1,3 +1,4 @@
+
 var view = {
   displayMessage : function(msg) {
     var messageArea = document.getElementById("message-area");
@@ -150,9 +151,10 @@ function parseGuess(guess){
   return null;
 
 }
+
 $(window).load(function() {
   $(".letter").each(function() {
-    $(this).hide().fadeIn(5000).delay(4000);
+    $(this).velocity("fadeIn", {duration: 5000});
     console.log("test letter");
   });
 
@@ -187,13 +189,13 @@ $(window).load(function() {
      function animateText(){
        var element = $("#message-area");
        if ($(window).width() <= 800){
-           element.animate({fontSize: "3rem", opacity: 1}, 800, function(){
-             element.animate({opacity: 0, fontSize: "2rem"});
+           element.velocity({fontSize: "3rem", opacity: 1}, 800, function(){
+             element.velocity({opacity: 0, fontSize: "2rem"});
              console.log("smally text");
            });
          } else {
-           element.animate({fontSize: "5rem", opacity: 1}, 800, function(){
-                                   element.animate({opacity: 0, fontSize: "2rem"});
+           element.velocity({fontSize: "5rem", opacity: 1}, 800, function(){
+                                   element.velocity({opacity: 0, fontSize: "2rem"});
                                    console.log("animation done");
                                  });
          }
