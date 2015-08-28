@@ -1,7 +1,10 @@
 body {
   background-color: #000;
+  color: lime;
   background-image: url(../images/galaxyv4.png);
   font-family: 'press_start_2pregular',sans-serif;
+  text-transform: uppercase;
+
 
 }
 
@@ -20,15 +23,31 @@ body {
 }
 
 .header{
-  color: lime;
-  text-transform: uppercase;
+
+}
+.intro {
+
+
 }
 
+.intro h1 {
+  width: 100%;
+  font-size:8vmin;
+  z-index: 1;
+  position: absolute;
+  text-align: center;
+  top: 30%;
+
+
+
+}
 .intro img {
-  width: 50%;
+  position: relative;
+  width: 90%;
   margin: 0 auto;
   display: block;
 }
+
 
 div#board {
   position: relative;
@@ -37,8 +56,8 @@ div#board {
 div#message-area {
   color: #fff;
   position: absolute;
-  top: 2%;
-  left: 0%;
+  top: 30%;
+  text-align: center;
 }
 
 div#score-area {
@@ -68,12 +87,15 @@ div#score-area {
   color: white;
   width:100%;
   text-align: center;
-  border-left: rgb(23, 165, 147) solid 4px;
+  
 }
 
 
 .number {
-  border:rgb(23, 165, 147)  solid 4px;
+  border-top:gold  solid 4px;
+  border-bottom: rgb(181, 19, 222) solid 5px;
+  border-right: greenyellow solid 10px;
+  border-left: mediumspringgreen solid 7px;
   width:25%;
   font-size: 1rem;
   min-height: auto;
@@ -88,7 +110,8 @@ div#score-area {
       -ms-flex-positive: 2;
           flex-grow: 2;
   padding: 3%;
-  border: rgb(23, 165, 147) solid 4px;
+  border-left: rgb(60, 237, 211) solid 4px;
+  border-top: rgb(181, 19, 222) solid 4px;
 }
 
 .miss {
@@ -99,6 +122,10 @@ div#score-area {
 .hit {
   background: url('../images/ufowithfirev2.png') no-repeat center center;
   background-size: 65%;
+}
+
+.hide{
+  visibility: hidden;
 }
 
 @-webkit-keyframes largeText {
@@ -149,7 +176,16 @@ div#score-area {
   }
 
   div#message-area {
-    top: 2%;
-    left: 36%;
+    top: 36%;
+    left: 46%;
+  }
+
+  .intro h1 {
+    font-size: 13vmin;
+    top: 50%;
+  }
+
+  .intro img {
+    width: 50%;
   }
 }
