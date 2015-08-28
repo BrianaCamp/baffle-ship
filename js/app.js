@@ -204,11 +204,6 @@ $(window).load(function() {
        }
 
 
-
-
-
-
-
     $(".number").on('click', function(eventObj){
         eventObj.preventDefault();
         model.fire(eventObj.target.id);
