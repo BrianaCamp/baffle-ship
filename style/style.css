@@ -22,13 +22,21 @@ body {
 
 }
 
-.header{
+/*LINKS*/
 
+a {
+  color: lime;
 }
-.intro {
 
-
+a:hover {
+  color: hotpink;
 }
+
+a:visited {
+  color: white;
+}
+
+/*INTRO*/
 
 .intro h1 {
   width: 100%;
@@ -37,10 +45,8 @@ body {
   position: absolute;
   text-align: center;
   top: 30%;
-
-
-
 }
+
 .intro img {
   position: relative;
   width: 90%;
@@ -57,12 +63,18 @@ body {
 
 }
 
+/*STATEMENT*/
+
 .statement {
   text-align: center;
-  margin: 5%;
+  padding: 5%;
   line-height: 2rem;
   font-size: 1.2rem;
+  background-color: #000;
+  margin: 5%;
 }
+
+/*BOARD GAME*/
 
 div#board {
   position: relative;
@@ -130,6 +142,16 @@ div#score-area {
   border-top: rgb(181, 19, 222) solid 4px;
 }
 
+.d {
+  border-bottom: rgb(181, 19, 222) solid 5px;
+}
+
+/*FOOTER*/
+
+footer {
+  margin-top: 5%;
+}
+
 .miss {
   background: url('../images/triangle1.png') no-repeat center center;
   background-size: 31%;
@@ -144,40 +166,8 @@ div#score-area {
   visibility: hidden;
 }
 
-@-webkit-keyframes largeText {
-    0%, 100% {
-        visibility: hidden;
-        opacity: 0;
-    }
 
-    50% {
-        visibility: visible;
-        opacity: 1;
-        font-size: 10rem;
-    }
-
-}
-
-@keyframes largeText {
-    0%, 100% {
-        visibility: hidden;
-        opacity: 0;
-    }
-
-    50% {
-        visibility: visible;
-        opacity: 1;
-        font-size: 10rem;
-    }
-
-}
-
-
-.animateText {
-  -webkit-animation: largeText 1.5s;
-          animation: largeText 1.5s;
-}
-
+/*MEDIA QUERIES*/
 
 @media (min-width: 768px) {
   .flex-grid {
@@ -197,11 +187,17 @@ div#score-area {
   }
 
   .intro h1 {
-    font-size: 13vmin;
+    font-size: 10vmin;
     top: 50%;
   }
 
   .intro img {
     width: 50%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .intro h1 {
+    font-size:10vmax;
   }
 }
