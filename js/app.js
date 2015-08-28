@@ -150,7 +150,7 @@ function parseGuess(guess){
   return null;
 
 }
-$(document).ready(function() {
+$(window).load(function() {
   $(".letter").each(function() {
     $(this).hide().fadeIn(5000).delay(4000);
     console.log("test letter");
