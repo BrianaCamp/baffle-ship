@@ -56,8 +56,8 @@ div#board {
 div#message-area {
   color: #fff;
   position: absolute;
-  top: 2%;
-  left: 0%;
+  top: 30%;
+  text-align: center;
 }
 
 div#score-area {
@@ -87,12 +87,15 @@ div#score-area {
   color: white;
   width:100%;
   text-align: center;
-  border-left: rgb(23, 165, 147) solid 4px;
+  
 }
 
 
 .number {
-  border:rgb(23, 165, 147)  solid 4px;
+  border-top:gold  solid 4px;
+  border-bottom: rgb(181, 19, 222) solid 5px;
+  border-right: greenyellow solid 10px;
+  border-left: mediumspringgreen solid 7px;
   width:25%;
   font-size: 1rem;
   min-height: auto;
@@ -107,7 +110,8 @@ div#score-area {
       -ms-flex-positive: 2;
           flex-grow: 2;
   padding: 3%;
-  border: rgb(23, 165, 147) solid 4px;
+  border-left: rgb(60, 237, 211) solid 4px;
+  border-top: rgb(181, 19, 222) solid 4px;
 }
 
 .miss {
@@ -172,8 +176,8 @@ div#score-area {
   }
 
   div#message-area {
-    top: 2%;
-    left: 36%;
+    top: 36%;
+    left: 46%;
   }
 
   .intro h1 {

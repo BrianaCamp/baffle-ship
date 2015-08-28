@@ -12,11 +12,11 @@ var view = {
   displayMiss : function(location) {
     var cell = document.getElementById(location);
       cell.classList.add("miss");
-  },
-  displayScore : function(score){
-    var scoreArea = document.getElementById("score-area");
-    scoreArea.innerHTML = controller.score;
   }
+  // displayScore : function(score){
+  //   var scoreArea = document.getElementById("score-area");
+  //   scoreArea.innerHTML = controller.score;
+  // }
 };
 
 
@@ -158,22 +158,22 @@ $(document).ready(function() {
 
   model.generateShipsLocations();
 
-  function generateScore1(){
-     if(view.displayMessage === "HIT!"){
-       controller.score += 1000;
-     }
-     console.log(view.displayScore(controller.score));
-   }
+  // function generateScore1(){
+  //    if(view.displayMessage === "HIT!"){
+  //      controller.score += 1000;
+  //    }
+  //    console.log(view.displayScore(controller.score));
+  //  }
 
     //when there are any number of class "hit", then add 1000 to score
-    function generateScore(){
-      var score = 0;
-      if($("body").hasClass("hit"))
-        $("hit").each(function(){
-          score *= 1000;
-        });
-        console.log(score);
-    }
+    // function generateScore(){
+    //   var score = 0;
+    //   if($("body").hasClass("hit"))
+    //     $("hit").each(function(){
+    //       score *= 1000;
+    //     });
+    //     console.log(score);
+    // }
 
     function gameOver(){
       var classHitNumber = $(".hit").length;
@@ -213,7 +213,7 @@ $(document).ready(function() {
         gameOver();
         // view.displayHit(eventObj.target.id);
         // view.displayMiss(eventObj.target.id);
-        generateScore1();
+        // generateScore1();
         animateText();
         return false;
 
