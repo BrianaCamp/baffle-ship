@@ -153,6 +153,7 @@ function parseGuess(guess){
 }
 
 $(window).load(function() {
+  $(".loader").fadeOut("slow");
   $(".letter").each(function() {
     $(this).velocity("fadeIn", {duration: 5000});
     console.log("test letter");
