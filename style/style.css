@@ -33,7 +33,7 @@ body {
         -webkit-transform: rotate(360deg) scale(3);
                 transform: rotate(360deg) scale(3);
     }
-    
+
 }
 @keyframes loading {
     0% {
@@ -68,6 +68,14 @@ body {
     left: 50%;
     top:50%;
 }
+
+.loader p {
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 50%;
+  font-size: 1.2rem;
+}
+
 
 /*LINKS*/
 
@@ -215,6 +223,10 @@ footer {
 /*MEDIA QUERIES*/
 
 @media (min-width: 768px) {
+  .loader p {
+    margin-top: 20%;
+    font-size: 3rem;
+  }
   .flex-grid {
     -webkit-flex-wrap: nowrap;
         -ms-flex-wrap: nowrap;
